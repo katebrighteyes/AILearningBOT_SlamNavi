@@ -1,5 +1,8 @@
 # Basic Test
 
+터미널에서 gedit ~/.bashrc 를 열어서 강사의 가이드에 따라 편집하고 저장합니다.
+모든 터미널을 끄고 새로운 터미널을 열어서 예제를 진행합니다.
+
 ./install_catkinws.sh
 
 ##확인
@@ -16,3 +19,93 @@ cd ~/catkin_ws
 catkin_make
 
 빌드가 끝나면 창을 끄고 새로운 창을 켜서 책의 2장의 실습을 진행하겠습니다.
+--------------------------
+1. basic topic test
+
+rostopic_pub.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+rostopic_sub.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+
+<실행>
+터미널을 열고 roscore 실행시킵니다.
+roscore 
+
+- 다른 터미널
+rosrun ros_basic_test rostopic_pub.py
+
+- 다른 터미널
+rosrun ros_basic_test rostopic_sub.py
+
+--------------------------
+1. basic topic test
+
+rostopic_pub.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+rostopic_sub.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+
+<실행>
+roscore 
+- 다른 터미널
+rosrun ros_basic_test rostopic_pub.py
+- 다른 터미널
+rosrun ros_basic_test rostopic_sub.py
+
+--------------------------
+2. topic msg test
+
+CMakeLists.txt 확인
+Infodata.msg 확인
+
+info_publisher.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+
+<실행>
+roscore 
+- 다른 터미널
+rosrun ros_basic_topicmsg info_publisher.py
+- 다른 터미널
+rosrun ros_basic_topicmsg info_subscriber.py
+
+--------------------------
+3. service test
+
+CMakeLists.txt 확인
+WordCount.srv 확인
+
+srv_server.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+srv_client.py 에서 교재를 보고 입력하여 완성하여 저장합니다.
+
+<실행>
+roscore 
+- 다른 터미널
+rosrun ros_basic_service srv_server.py
+- 다른 터미널
+rosrun ros_basic_service srv_client.py Hello my friend
+
+--------------------------
+4. action service test
+
+CMakeLists.txt 확인
+Timer.action 확인
+
+소스를 확인합니다.
+
+<실행>
+roscore 
+- 다른 터미널
+rosrun ros_basic_action simple_action_server.py
+- 다른 터미널
+rosrun ros_basic_action simple_action_client.py
+
+--------------------------
+4. action async test
+
+CMakeLists.txt 확인
+Timer.action 확인
+
+소스를 확인합니다.
+
+<실행>
+roscore 
+- 다른 터미널
+rosrun ros_basic_asynctest async_action_server.py
+- 다른 터미널
+rosrun ros_basic_asynctest async_action_client.py
+
