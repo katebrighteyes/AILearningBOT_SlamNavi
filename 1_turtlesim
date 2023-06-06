@@ -1,1 +1,23 @@
 
+# TurtleSim
+
+##[TEST]
+
+#1) EXECUTE roscore
+
+##창을 새로 띄운 후 roscore 실행
+
+roscore
+
+#2) turtle ##또 다른 창에서 거북이 창 실행
+
+rosrun turtlesim turtlesim_node
+
+#3)move ##또 다른 창에서 키 동작 오퍼 기능 실행
+
+rosrun turtlesim turtle_teleop_key
+
+-------------
+rosbag record -O my.bag -a
+
+rosbag play my.bag
