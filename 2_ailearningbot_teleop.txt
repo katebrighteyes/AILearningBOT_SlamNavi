@@ -1,0 +1,10 @@
+# ailearningbot_teleop
+
+candump
+
+
+roslaunch ros_aibot_ctl aibot_core.launch
+
+
+roslaunch aibot_teleop aibot_teleop_key.launch
+
