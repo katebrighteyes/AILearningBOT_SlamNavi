@@ -48,6 +48,9 @@ rosrun ros_basic_test rostopic_pub.py
 - 다른 터미널
 rosrun ros_basic_test rostopic_sub.py
 
+ * 런치 파일 테스트
+ roslaunch ros_topic_test launch_test.launch
+ 
 --------------------------
 2. topic msg test
 
@@ -95,7 +98,7 @@ rosrun ros_basic_action simple_action_server.py
 rosrun ros_basic_action simple_action_client.py
 
 --------------------------
-4. action async test
+5. action async test
 
 CMakeLists.txt 확인
 Timer.action 확인
