@@ -1,6 +1,6 @@
 # ailearningbot_teleop
 
-candump
+candump can0
 
 
 roslaunch ros_aibot_ctl aibot_core.launch
