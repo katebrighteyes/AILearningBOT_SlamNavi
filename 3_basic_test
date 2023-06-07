@@ -66,6 +66,9 @@ rosrun ros_basic_topicmsg info_publisher.py
 - 다른 터미널
 rosrun ros_basic_topicmsg info_subscriber.py
 
+런치파일 테스트
+roslaunch ros_basic_topicmsg ros_topic_test.launch
+
 --------------------------
 3. service test
 
