@@ -35,6 +35,16 @@ roslaunch ros_sensor_test lidar_sub_test.launch
 
 검은색 라이다
 
+cd ~/sensor_ai_ws/src/ros_sensor_test/src
+
+gedit lidar_nodeC.py
+
+* 실행 권한 확인 필요
+
+cd ~/sensor_ai_ws/src/ros_sensor_test/launch
+
+gedit lidar_sub_testC.launch
+
 roslaunch ros_sensor_test lidar_sub_testC.launch
 
 손을 가까이 대서 근접 거리 경고 확인
