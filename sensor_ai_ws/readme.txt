@@ -41,6 +41,8 @@ gedit lidar_nodeC.py
 
 * 실행 권한 확인 필요
 
+chmod 777 *
+
 cd ~/sensor_ai_ws/src/ros_sensor_test/launch
 
 gedit lidar_sub_testC.launch
