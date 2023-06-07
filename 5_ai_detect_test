@@ -1,0 +1,31 @@
+2. 지능형 사물인지
+
+2.1 ROS Darknet Yolo 노드
+
+Darknet Node
+
+roslaunch ros_object_detect ros_darknet.launch
+
+사람 인지 확인
+
+Ctl-C
+
+2.3 ROS TensorRT DetectNet 노드
+Trt DetecNet Node
+
+roslaunch ros_object_detect ros_trt_detectnet.launch
+
+사람 인지 확인
+
+5.1 ROS Darknet + Following + 충돌방지
+AIbot Darknet Ready
+
+roslaunch ros_aibot_drive aibot_darknet_ready.launch
+
+팔로잉
+
+(파란색 라이다) roslaunch aibot_fusion_package aibot_fusion_test.launch
+
+(검은색 라이다) roslaunch aibot_fusion_package aibot_fusion_testC.launch
+
+컵을 감지하면 팔로잉 확인
