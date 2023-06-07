@@ -16,6 +16,9 @@ rosrun turtlesim turtlesim_node
 #3)move ##또 다른 창에서 키 동작 오퍼 기능 실행
 
 rosrun turtlesim turtle_teleop_key
+-------------
+
+rqt_graph
 
 -------------
 rosbag record -O my.bag -a
