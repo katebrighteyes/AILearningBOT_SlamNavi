@@ -1,6 +1,15 @@
 터미널에서 gedit ~/.bashrc 를 열어서 강사의 가이드에 따라 편집하고 저장합니다.
 모든 터미널을 끄고 새로운 터미널을 열어서 예제를 진행합니다.
 
+# sensor_ai_ws 워크스페이스 패지지 소스 복사 및 빌드
+
+파일 탐색기로 Downloads 폴더의 sensor_ai_src 아래의 폴더들을 모두 복사해서
+역시 파일 탐색기로 sensor_ai_ws 안의 src 안으로 붙혀넣어주십시오.
+
+cd sensor_ai_ws
+
+catkin_make
+
 
 # 1. 카메라 예제
 
