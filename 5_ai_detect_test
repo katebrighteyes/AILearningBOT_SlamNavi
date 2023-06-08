@@ -24,8 +24,8 @@ roslaunch ros_object_detect aibot_darknet_ready.launch
 
 팔로잉
 
-(파란색 라이다) roslaunch aibot_fusion_package aibot_fusion_test.launch
+(파란색 라이다) roslaunch aibot_fusion_package aibot_fusion.launch
 
-(검은색 라이다) roslaunch aibot_fusion_package aibot_fusion_testC.launch
+(검은색 라이다) roslaunch aibot_fusion_package aibot_fusionC.launch
 
 컵을 감지하면 팔로잉 확인
