@@ -20,7 +20,7 @@ roslaunch ros_object_detect ros_trt_detectnet.launch
 5.1 ROS Darknet + Following + 충돌방지
 AIbot Darknet Ready
 
-roslaunch aibot_fusion_package aibot_darknet_ready.launch
+roslaunch ros_object_detect aibot_darknet_ready.launch
 
 팔로잉
 
