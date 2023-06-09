@@ -6,8 +6,53 @@
 [AI봇]
 candump can0
 
+[노트북]
+roslaunch aibot_teleop aibot_teleop_key.launch
+
 [AI봇]
 roslaunch ros_aibot_ctl aibot_core.launch
 
-[노트북]
+-----------------------------------------------------
+2. MPU6050 : IMU I2C
+
+[AI봇]
+(sudo apt-get install libi2c-dev i2c-tools -y) : 이미 설치가 되어 있습니다.
+
+감지되는 i2c 번호를 확인해주세요
+sudo i2cdetect -y -r 0 
+
+rosrun ros_aibot_ctl aibot_imu_pub
+
+-------------------------------------------------------
+
+4. aibot_slam 테스트
+
+노트북]
 roslaunch aibot_teleop aibot_teleop_key.launch
+
+[AI봇]
+roslaunch ros_aibot_ctl aibot_robot.launch
+
+노트북] 
+roslaunch aibot_slam aibot_slam.launch
+
+노트북] 
+<반드시 slam 노드를 종료하기 전에 별도의 터미널 창에서 아래와 같이 맵 데이터를 수집합니다.>
+rosrun map_server map_saver -f ~/map
+
+-------------------------------------------
+4. Navi 테스트
+
+[노트북] ]
+roslaunch aibot_teleop aibot_teleop_key.launch
+
+[AI봇]
+roslaunch ros_aibot_ctl aibot_robot.launch
+
+노트북] 
+roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
+
+노트북] 
+roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
+
+---------------------------------------------------------------------------
