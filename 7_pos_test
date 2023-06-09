@@ -21,22 +21,12 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map_turtle.yaml
 
 
-
+네비게이션으로 이동하면서 위치 확인하기.1
 rosrun turtle_control_test my_position_test01.py
 
-네비게이션으로 이동하면서 위치 확인하기.
+네비게이션으로 이동하면서 위치 확인하기.2
 
-# 소스 작성 2 
+rosrun turtle_control_test my_position_test02.py
 
-cd src/ros_turtle_test/src
-
-gedit my_goal_test.py
-....
-
-# 실행 2
-
-chmod 777 *.py
-
-#다른 창에서 실행
-
-rosrun ros_turtle_test my_goal_test.py
+확인한 위치를 소스에 반영한 후 에 실행
+rosrun turtle_control_test my_goal_test2.py
