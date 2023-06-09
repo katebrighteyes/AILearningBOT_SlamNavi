@@ -1,0 +1,13 @@
+< 실기 테스트>
+
+1. Teleop
+노트북에서 버추얼 박스를 사용합니다. 네트워크 상태를 점검하여 주십시오.
+
+[AI봇]
+candump can0
+
+[AI봇]
+roslaunch ros_aibot_ctl aibot_core.launch
+
+[노트북]
+roslaunch aibot_teleop aibot_teleop_key.launch
