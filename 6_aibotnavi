@@ -7,7 +7,7 @@
 candump can0
 
 [노트북]
-roslaunch aibot_teleop aibot_teleop_key.launch
+roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
 roslaunch ros_aibot_ctl aibot_core.launch
@@ -27,8 +27,8 @@ rosrun ros_aibot_ctl aibot_imu_pub
 
 4. aibot_slam 테스트
 
-노트북]
-roslaunch aibot_teleop aibot_teleop_key.launch
+[노트북]
+roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
 roslaunch ros_aibot_ctl aibot_robot.launch
@@ -44,7 +44,7 @@ rosrun map_server map_saver -f ~/map
 4. Navi 테스트
 
 [노트북] ]
-roslaunch aibot_teleop aibot_teleop_key.launch
+roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
 roslaunch ros_aibot_ctl aibot_robot.launch
