@@ -1,32 +1,23 @@
-roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+[노트북]
+roslaunch aibot_teleop aibot_teleop_key_m.launch
 
-roslaunch turtlebot3_gazebo turtlebot3_world.launch
+[AI봇]
+roslaunch ros_aibot_ctl aibot_robot.launch
 
-서버] 
-roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
-rosrun map_server map_saver -f ~/map
+[노트북]
 
-map_turtle
+roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
 
-# 터틀봇 실행 (가제보인 경우)
-
-roslaunch turtlebot3_gazebo turtlebot3_world.launch
-
-# 실제 터틀봇은
-roslaunch turtlebot3_bringup turtlebot3_robot.launch
-
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map_turtle.yaml
+roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
 
 
 네비게이션으로 이동하면서 위치 확인하기.1
-rosrun turtle_control_test my_position_test01.py
+rosrun ros_aibot_test my_position_test01.py
 
 네비게이션으로 이동하면서 위치 확인하기.2
 
-rosrun turtle_control_test my_position_test02.py
+rosrun ros_aibot_test my_position_test02.py
 
-확인한 위치를 소스에 반영한 후 에 실행
-rosrun turtle_control_test my_goal_test2.py
+(확인한 위치를 소스에 반영한 후 에 실행
+rosrun ros_aibot_test my_goal_test2.py)
