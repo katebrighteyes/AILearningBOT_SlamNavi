@@ -1,0 +1,18 @@
+[노트북]
+roslaunch aibot_teleop aibot_teleop_key_m.launch
+
+[AI봇]
+roslaunch ros_aibot_ctl aibot_robot.launch
+
+[노트북]
+
+roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
+
+roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
+
+rosrun ros_aibot_test my_yolo_navi.py 
+
+[AI봇]
+rosrun ros_object_detect ros_darknet_test3.py
+
+병, 사과, 키보드
