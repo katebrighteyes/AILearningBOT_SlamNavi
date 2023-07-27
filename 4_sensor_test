@@ -8,6 +8,8 @@
 
 cd sensor_ai_ws
 
+패키지를 빌드해야합니다.
+
 catkin_make
 
 
