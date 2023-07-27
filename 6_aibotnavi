@@ -21,7 +21,8 @@ roslaunch ros_aibot_ctl aibot_core.launch
 감지되는 i2c 번호를 확인해주세요
 sudo i2cdetect -y -r 0 
 
-rosrun ros_aibot_ctl aibot_imu_pub
+roslaunch mpu_6050_driver imu_demo.launch 
+
 
 -------------------------------------------------------
 
