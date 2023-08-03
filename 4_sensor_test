@@ -40,3 +40,8 @@ roslaunch ros_sensor_test lidar_sub_test.launch
 roslaunch ros_sensor_test lidar_sub_testC.launch
 
 손을 가까이 대서 근접 거리 경고 확인
+
+
+# 3. IMU 예제
+
+roslaunch mpu_6050_driver imu_demo.launch
