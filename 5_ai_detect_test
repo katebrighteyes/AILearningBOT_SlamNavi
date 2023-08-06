@@ -15,17 +15,4 @@ Trt DetecNet Node
 
 roslaunch ros_object_detect ros_trt_detectnet.launch
 
-사람 인지 확인
 
-5.1 ROS Darknet + Following + 충돌방지
-AIbot Darknet Ready
-
-roslaunch ros_object_detect aibot_darknet_ready.launch
-
-팔로잉
-
-(파란색 라이다) roslaunch aibot_fusion_package aibot_fusion.launch
-
-(검은색 라이다) roslaunch aibot_fusion_package aibot_fusionC.launch
-
-컵을 감지하면 팔로잉 확인
