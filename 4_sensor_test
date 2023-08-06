@@ -15,7 +15,7 @@ catkin_make
 
 # 1. 카메라 예제
 
-roslaunch ros_sensor_test camera_test.launch
+roslaunch ros_sensor_test camera_node.launch
 
 
 # 2. 라이다 예제
