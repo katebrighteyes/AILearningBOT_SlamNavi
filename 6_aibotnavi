@@ -22,10 +22,10 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 [AI봇]
 roslaunch ros_aibot_ctl aibot_robot.launch
 
-노트북] 
+[노트북] 
 roslaunch aibot_slam aibot_slam.launch
 
-노트북] 
+[노트북] 
 <반드시 slam 노드를 종료하기 전에 별도의 터미널 창에서 아래와 같이 맵 데이터를 수집합니다.>
 rosrun map_server map_saver -f ~/map
 
