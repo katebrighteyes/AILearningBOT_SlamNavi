@@ -49,7 +49,7 @@ rosrun ros_basic_test rostopic_pub.py
 rosrun ros_basic_test rostopic_sub.py
 
  * 런치 파일 테스트
- roslaunch ros_topic_test launch_test.launch
+ roslaunch ros_basic_test launch_test.launch
  
 --------------------------
 2. topic msg test
