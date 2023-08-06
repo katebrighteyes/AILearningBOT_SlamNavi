@@ -12,21 +12,9 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 [AI봇]
 roslaunch ros_aibot_ctl aibot_core.launch
 
------------------------------------------------------
-2. MPU6050 : IMU I2C
-
-[AI봇]
-(sudo apt-get install libi2c-dev i2c-tools -y) : 이미 설치가 되어 있습니다.
-
-감지되는 i2c 번호를 확인해주세요
-sudo i2cdetect -y -r 0 
-
-roslaunch mpu_6050_driver imu_demo.launch 
-
-
 -------------------------------------------------------
 
-4. aibot_slam 테스트
+2. aibot_slam 테스트
 
 [노트북]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
@@ -42,7 +30,7 @@ roslaunch aibot_slam aibot_slam.launch
 rosrun map_server map_saver -f ~/map
 
 -------------------------------------------
-4. Navi 테스트
+3. Navi 테스트
 
 [노트북] ]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
