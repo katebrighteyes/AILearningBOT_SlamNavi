@@ -6,3 +6,7 @@ gazebo
 roscore
 
 rosrun gazebo_ros gazebo
+
+
+sudo apt-get install ros-melodic-slam-gmapping ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers -y
+
