@@ -3,13 +3,6 @@
 
 # sensor_ai_ws 워크스페이스 
 
-cd sensor_ai_ws
-
-패키지를 빌드해야합니다.
-
-catkin_make
-
-
 # 1. 카메라 예제
 
 roslaunch ros_sensor_test camera_test.launch
@@ -19,18 +12,26 @@ roslaunch ros_sensor_test camera_test.launch
 
 # 2.1 ROS 라이다 기본 예제
 
-검은색 라이다
+검은색 라이다 (camsense)
 
 roslaunch camsense_driver view.launch
+
+검은색에 하얀 V플리 (lds01)
+
+roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 
 
 # 2.2 ROS 라이다 응용 예제
 
-검은색 라이다
+검은색 라이다 (camsense)
 
 roslaunch ros_sensor_test lidar_sub_testC.launch
 
 손을 가까이 대서 근접 거리 경고 확인
+
+검은색에 하얀 V플리 (lds01)
+
+roslaunch ros_sensor_test lidar_sub_testL.launch
 
 
 # 3. IMU 예제
