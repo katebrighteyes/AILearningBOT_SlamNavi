@@ -10,7 +10,14 @@ candump can0
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
-roslaunch ros_aibot_ctl aibot_core.launch
+
+   검은색 라이다 (camsense)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
+
+   검은색에 하얀 V플리 (lds01)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
 -------------------------------------------------------
 
@@ -20,7 +27,13 @@ roslaunch ros_aibot_ctl aibot_core.launch
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
-roslaunch ros_aibot_ctl aibot_robot.launch
+   검은색 라이다 (camsense)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
+
+   검은색에 하얀 V플리 (lds01)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
 [노트북] 
 roslaunch aibot_slam aibot_slam.launch
@@ -36,7 +49,13 @@ rosrun map_server map_saver -f ~/map
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
-roslaunch ros_aibot_ctl aibot_robot.launch
+   검은색 라이다 (camsense)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
+
+   검은색에 하얀 V플리 (lds01)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
 노트북] 
 roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
