@@ -3,13 +3,13 @@
 1. Teleop
 노트북에서 버추얼 박스를 사용합니다. 네트워크 상태를 점검하여 주십시오.
 
-[AI봇]
+[로봇]
 candump can0
 
-[노트북]
+[PC]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
-[AI봇]
+[로봇]
 
    검은색 라이다 (camsense)
 
@@ -26,7 +26,7 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 [노트북]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
-[AI봇]
+[로봇]
    검은색 라이다 (camsense)
 
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
@@ -35,20 +35,20 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
-[노트북] 
+[PC] 
 roslaunch aibot_slam aibot_slam.launch
 
-[노트북] 
+[PC] 
 <반드시 slam 노드를 종료하기 전에 별도의 터미널 창에서 아래와 같이 맵 데이터를 수집합니다.>
 rosrun map_server map_saver -f ~/map
 
 -------------------------------------------
 3. Navi 테스트
 
-[노트북] ]
+[PC]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
-[AI봇]
+[로봇]
    검은색 라이다 (camsense)
 
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
@@ -57,10 +57,10 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
-노트북] 
+[PC] 
 roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
 
-노트북] 
+[PC] 
 roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
 
 ---------------------------------------------------------------------------
