@@ -15,4 +15,42 @@ Trt DetecNet Node
 
 roslaunch ros_object_detect ros_trt_detectnet.launch
 
+ros_darknet_test.py 를 ros_darknet_test2.py 로 복사
+----------------------------
+#TODO 1
+from ros_object_detect.msg import DetInfo
+
+#TODO 2
+def image_detection2 함수에서 
+for문 위에
+    count = 0
+    label1 = 0
+    bbox1 = []
+#TODO 2 for문 아래에
+        if(count == 0):
+            label1 = label
+            bbox1 = bbox_adjusted
+            count = count+1
+    if label1:
+        print("label:{} x1:{} x2:{}".format(label1, bbox1[0], bbox1[0] + bbox1[2])) 
+        msg = DetInfo()
+        msg.label = label
+        msg.bWidth = bbox1[2]
+        msg.bHeight = bbox1[3]          
+        msg.centerX = int(bbox1[0] + bbox1[2]/2.0)
+        msg.centerY = int(bbox1[1] + bbox1[3]/2.0)
+
+        det_pub.publish(msg)
+#TODO 3
+def model_detect 함수에서
+text = '%s (%d)' % (classes[classId], classId)
+
+#TODO 4 
+
+rospy.init_node("darknet_pub", anonymous=True)
+image_pub = rospy.Publisher("darknet_image", Image, queue_size=1)
+det_pub = rospy.Publisher('detdata', DetInfo, queue_size=10)
+
+
+
 
