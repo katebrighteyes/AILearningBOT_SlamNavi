@@ -14,7 +14,12 @@
 
 6. ROS 가제보
 
-7. ROS SLAM 과 네비게이션
+   wget https://raw.githubusercontent.com/katebrighteyes/jetson_ros_melodic/master/next/setup_SimulJetson.sh
+   chmod 777 setup_SimulJetson.sh
+
+  ./setup_SimulJetson.sh
+
+8. ROS SLAM 과 네비게이션
 
    https://drive.google.com/drive/folders/1w58FTlRVFDMluOWeL1IN-DznaXlgFbVX?usp=sharing
    
