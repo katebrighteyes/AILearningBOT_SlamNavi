@@ -16,6 +16,7 @@
 
    wget https://raw.githubusercontent.com/katebrighteyes/jetson_ros_melodic/master/next/setup_SimulJetson.sh
 
+
    chmod 777 setup_SimulJetson.sh
 
   ./setup_SimulJetson.sh
