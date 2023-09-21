@@ -19,7 +19,7 @@
 
    chmod 777 setup_SimulJetson.sh
 
-  ./setup_SimulJetson.sh
+    ./setup_SimulJetson.sh
 
 8. ROS SLAM 과 네비게이션
 
