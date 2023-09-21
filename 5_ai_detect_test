@@ -15,6 +15,9 @@ Trt DetecNet Node
 
 roslaunch ros_object_detect ros_trt_detectnet.launch
 
+============================================================================
+                       토픽 테스트
+============================================================================
 ros_darknet_test.py 를 ros_darknet_test2.py 로 복사
 ----------------------------
 #TODO 1
@@ -41,12 +44,13 @@ for문 위에
         msg.centerY = int(bbox1[1] + bbox1[3]/2.0)
 
         det_pub.publish(msg)
+
 #TODO 3
 def model_detect 함수에서
 text = '%s (%d)' % (classes[classId], classId)
 
 #TODO 4 
-
+메인에서
 rospy.init_node("darknet_pub", anonymous=True)
 image_pub = rospy.Publisher("darknet_image", Image, queue_size=1)
 det_pub = rospy.Publisher('detdata', DetInfo, queue_size=10)
