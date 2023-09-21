@@ -1,18 +1,24 @@
-[노트북]
+[PC]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
 [AI봇]
-roslaunch ros_aibot_ctl aibot_robot.launch
+   검은색 라이다 (camsense)
 
-[노트북]
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
+
+   검은색에 하얀 V플리 (lds01)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
+
+[PC]
 
 roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
 
 roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
 
-rosrun ros_aibot_test my_yolo_navi.py 
+rosrun ros_aibot_test my_yolo_navi2.py 
 
 [AI봇]
-rosrun ros_object_detect ros_darknet_test3.py
+rosrun ros_object_detect ros_darknet_test2.py
 
 병, 사과, 키보드
