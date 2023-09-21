@@ -84,3 +84,11 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
 roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
 
 ---------------------------------------------------------------------------
+
+
+#source ~/ailearningbot_ws/devel/setup.bash
+#source ~/catkin_ws/devel/setup.bash
+source ~/sensor_ai_ws/devel/setup.bash --extend
+source ~/aibotnavi_ws/devel/setup.bash
+source ~/cvbridge_build_ws/install/setup.bash --extend
+
