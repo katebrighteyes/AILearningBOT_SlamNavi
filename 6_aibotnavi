@@ -36,7 +36,13 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
 [PC] 
-roslaunch aibot_slam aibot_slam.launch
+    검은색 라이다 (camsense)
+
+    roslaunch aibot_slam aibot_slam.launch lidar_methods:=camsense
+
+    검은색에 하얀 V플리 (lds01)
+
+    roslaunch aibot_slam aibot_slam.launch lidar_methods:=lds01
 
 [PC] 
 <반드시 slam 노드를 종료하기 전에 별도의 터미널 창에서 아래와 같이 맵 데이터를 수집합니다.>
@@ -58,7 +64,15 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
    roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
 
 [PC] 
-roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
+  
+    검은색 라이다 (camsense)
+
+    roslaunch ros_aibot_ctl aibot_rviz_amcl.launch lidar_methods:=camsense
+
+    검은색에 하얀 V플리 (lds01)
+
+    roslaunch ros_aibot_ctl aibot_rviz_amcl.launch lidar_methods:=lds01
+
 
 [PC] 
 roslaunch aibot_navigation aibot_amcl.launch map_file:=$HOME/map.yaml
