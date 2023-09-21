@@ -1,11 +1,17 @@
-[노트북]
+[PC]
 roslaunch aibot_teleop aibot_teleop_key_m.launch
 
-[AI봇]
+[로봇]
 roslaunch ros_aibot_ctl aibot_robot.launch
+   검은색 라이다 (camsense)
 
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=camsense
 
-[노트북]
+   검은색에 하얀 V플리 (lds01)
+
+   roslaunch ros_aibot_ctl aibot_robot.launch lidar_methods:=lds01
+
+[PC]
 
 roslaunch ros_aibot_ctl aibot_rviz_amcl.launch
 
