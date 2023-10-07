@@ -49,8 +49,8 @@ roslaunch aibot_teleop aibot_teleop_key_m.launch
     검은색에 하얀 V플리 (lds01)
     roslaunch aibot_slam aibot_slam.launch lidar_methods:=lds01
 
-   파란색 (ydlidar)
-   roslaunch aibot_slam aibot_slam.launch lidar_methods:=ydlidar
+    파란색 (ydlidar)
+    roslaunch aibot_slam aibot_slam.launch lidar_methods:=ydlidar
 
 [PC] 
 <반드시 slam 노드를 종료하기 전에 별도의 터미널 창에서 아래와 같이 맵 데이터를 수집합니다.>
